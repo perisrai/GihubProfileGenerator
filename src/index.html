@@ -6,20 +6,22 @@
   </head>
   <body class="main">
     <section>
+      <a href="mainPage.html">Next</a>
       <div class="form-wrapper">
         <p class="title">Github Profile</p>
         <p class="sub-title">Generate your Github Profile</p>
-        <div class="form">
+        <form class="form" id="form" method="GET" name="form">
           <label id="github-username">Github Username</label>
           <div class="fields">
-            <input name="username" type="text" />
-            <button id="generate-btn" type="button">Generate</button>
+            <input id="input-username" name="username" type="text" />
+            <button id="btn-generate" class="btn-generate" type="submit">
+              Generate
+            </button>
           </div>
-        </div>
+        </form>
       </div>
     </section>
-    <section>
-      <h2>Main Page</h2>
-    </section>
+
+    <script type="module" src="main.js"></script>
   </body>
 </html>

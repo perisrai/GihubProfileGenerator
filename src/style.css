@@ -11,13 +11,13 @@
   left: 0;
   top: 0;
   overflow: auto;
-  background: linear-gradient(118.39deg, #4ca9df -1.16%, #292e91 101.16%);
 }
 
 section {
   position: relative;
   width: 100%;
   height: 100vh;
+  background-image: url("./assets/background.png");
 }
 
 .form-wrapper {
@@ -62,7 +62,7 @@ section {
   justify-content: space-between;
 }
 
-.fields input {
+input {
   width: 252px;
   height: 37px;
   padding-left: 5px;
@@ -78,7 +78,8 @@ input:focus {
   box-shadow: 0 0 0 0.2rem #ff6a2a66;
 }
 
-.fields button {
+.btn-generate,
+.btn-hire {
   width: 158px;
   height: 37px;
   color: white;
@@ -86,9 +87,169 @@ input:focus {
   border: 1px solid #f24e1e;
   box-sizing: border-box;
   border-radius: 6px;
+  cursor: pointer;
 }
 
-button:hover {
+.btn-generate:hover,
+.btn-hire:hover {
   background: #cf4f17;
   border: 1px solid #cf4f17;
+}
+
+.main-section {
+  position: absolute;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+}
+
+.btn-group {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 5rem;
+}
+
+.btn-back {
+  width: 1.25rem;
+  height: auto;
+  background: none;
+  border: none;
+}
+
+.btn-back:hover {
+  background: none;
+  border: none;
+  color: #f2f2f2;
+  cursor: pointer;
+}
+
+.main-container {
+  position: relative;
+  margin: 0 5rem 3rem 5rem;
+  height: calc(100vh - 133px);
+  background: white;
+  border-radius: 8px;
+}
+
+.avatar-wrapper {
+  position: relative;
+  width: 100px;
+  margin: 0 auto;
+  height: 100px;
+  top: -48px;
+  border-radius: 55px;
+  background: white;
+}
+
+.avatar-wrapper img {
+  top: 0;
+  width: 100px;
+  height: 100px;
+}
+
+.user-info {
+  position: relative;
+  width: 100%;
+  top: -2rem;
+}
+
+.personal-info {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.personal-info h2,
+.personal-info p {
+  text-align: center;
+}
+
+.github-statistics {
+  position: relative;
+  width: 500px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.github-statistics label {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700px;
+  margin-bottom: 0.5rem;
+}
+
+.github-statistics .followers,
+.github-statistics .following,
+.github-statistics .repositories {
+  position: relative;
+  width: 33%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem;
+}
+
+.btn-disabled {
+  width: 142px;
+  height: 36px;
+  background: #c4c4c459;
+  border-radius: 3px;
+  border: none;
+  color: black;
+}
+
+.github-info {
+  position: relative;
+  display: flex;
+  height: 206px;
+  margin: 1rem 4rem 0 4rem;
+  justify-content: space-between;
+}
+
+.github-info .other-info,
+.github-info .user-bio {
+  position: relative;
+  display: flex;
+  width: 460px;
+  background: #ffffff;
+  border: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.other-info {
+  display: flex;
+  flex-direction: row;
+}
+
+.other-info .block-one,
+.other-info .block-two {
+  position: relative;
+  width: 50%;
+  padding: 1rem;
+}
+
+.block-one div,
+.block-two div {
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.email label,
+.location label,
+.twitter label {
+  font-size: 10px;
+  color: #7e7e7e;
+}
+
+.email .value,
+.location .value,
+.twitter .value {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
 }
