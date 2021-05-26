@@ -1,3 +1,5 @@
+@import "./_variable.scss";
+
 * {
   margin: 0;
   padding: 0;
@@ -17,27 +19,27 @@ section {
   position: relative;
   width: 100%;
   height: 100vh;
-  background-image: url("./assets/background.png");
+  background-image: url("../background.png");
 }
 
 .form-wrapper {
   position: relative;
   margin: 0 auto;
-  width: 427px;
-  height: 161px;
+  width: 26.68em;
+  height: 10.06em;
   top: calc(100vh - 65%);
 }
 
 .form-wrapper .title {
   color: white;
-  font-size: 36px;
+  font-size: 2.25em;
   font-weight: bold;
   text-align: center;
 }
 
 .form-wrapper p.sub-title {
   color: white;
-  font-size: 14px;
+  font-size: 0.875em;
   font-weight: normal;
   text-align: center;
 }
@@ -46,12 +48,12 @@ section {
   display: flex;
   flex-direction: column;
   position: relative;
-  top: 34px;
+  top: 2.125em;
 }
 
 .form label {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1.125em;
   color: white;
 }
 
@@ -63,14 +65,14 @@ section {
 }
 
 input {
-  width: 252px;
-  height: 37px;
-  padding-left: 5px;
+  width: 15.75em;
+  height: 2.31em;
+  padding-left: 0.31em;
   background: rgba(237, 237, 237, 0.63);
-  border-radius: 6px;
+  border-radius: 0.375em;
   color: black;
   border: none;
-  font-size: 14px;
+  font-size: 0.875em;
 }
 
 input:focus {
@@ -80,8 +82,8 @@ input:focus {
 
 .btn-generate,
 .btn-hire {
-  width: 158px;
-  height: 37px;
+  width: 9.875em;
+  height: 2.31em;
   color: white;
   background: #de5a21;
   border: 1px solid #f24e1e;
@@ -127,7 +129,7 @@ input:focus {
 .main-container {
   position: relative;
   margin: 0 5rem 3rem 5rem;
-  height: calc(100vh - 133px);
+  height: calc(100vh - 8.31em);
   background: white;
   border-radius: 8px;
 }
@@ -146,6 +148,7 @@ input:focus {
   top: 0;
   width: 100px;
   height: 100px;
+  border-radius: 55px;
 }
 
 .user-info {
@@ -176,7 +179,7 @@ input:focus {
 .github-statistics label {
   text-align: center;
   font-size: 20px;
-  font-weight: 700px;
+  font-weight: 700;
   margin-bottom: 0.5rem;
 }
 
@@ -216,7 +219,7 @@ input:focus {
   background: #ffffff;
   border: 1px solid #c4c4c4;
   box-sizing: border-box;
-  border-radius: 4px;
+  border-radius: 0.25em;
 }
 
 .other-info {
@@ -238,18 +241,30 @@ input:focus {
   flex-direction: column;
 }
 
-.email label,
-.location label,
-.twitter label {
-  font-size: 10px;
+.info-label label {
+  font-size: 0.625em;
   color: #7e7e7e;
 }
 
-.email .value,
-.location .value,
-.twitter .value {
+.info-label .value {
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.125em;
   color: black;
+}
+
+.user-bio {
+  display: flex;
+  flex-direction: column;
+  padding: 1.31rem;
+}
+
+.user-bio p {
+  font-size: 0.875em;
+  padding: 1rem 0 1rem 0;
+}
+
+.user-bio label {
+  font-size: 18px;
+  font-weight: bold;
 }

@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Github Profile Generator</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body class="main">
     <section>
@@ -21,7 +21,79 @@
         </form>
       </div>
     </section>
-
+ <section class="main-section">
+      <div class="btn-group">
+        <button type="button" class="btn-back">
+          <a href="index.html"><img src="./assets/icons/back.svg" /></a>
+        </button>
+        <button type="button" class="btn-hire">Hire Me</button>
+      </div>
+      <div class="main-container">
+        <div class="avatar-wrapper">
+          <img id="user-avatar" src="./assets/icons/user.png" />
+        </div>
+        <div class="user-info">
+          <div class="personal-info">
+            <h2 id="full-name">John Doe</h1>
+            <p class="username" id="username">@john_doe</p>
+          </div>
+          <div class="github-statistics">
+            <div class="followers">
+              <label id="followers-count">20</label>
+              <button class="btn-disabled" disabled name="followers">Followers</button>
+            </div>
+            <div class="following">
+              <label id="following-count">4.5K</label>
+              <button class="btn-disabled" disabled name="following">Following</button>
+            </div>
+            <div class="repositories">
+              <label id="repositories-count">16</label>
+              <button class="btn-disabled" disabled name="repositories" >Repositories</button>
+            </div>
+          </div>
+          <div class="github-info">
+            <div class="other-info">
+              <div class="block-one">
+                <div class="info-label">
+                  <label>Email</label>
+                  <label class="value" id="email-id">xyz@email.com</label>
+                </div>
+                <div class="info-label">
+                  <label>Location</label>
+                  <label class="value" id="location">New York</label>
+                </div>
+                <div class="info-label">
+                  <label>Twitter</label>
+                  <label class="value" id="twitter-id">@john_doe</label>
+                </div>
+              </div>
+              <div class="block-two">
+                <div class="info-label">
+                  <label>Organization</label>
+                  <label class="value" id="organization">xyz@email.com</label>
+                </div>
+                <div class="info-label">
+                  <label>Joined Date</label>
+                  <label class="value" id="joined-date">New York</label>
+                </div>
+                <div class="info-label">
+                  <label>Website</label>
+                  <label class="value" id="website">@john_doe</label>
+                </div>
+              </div>
+            </div>
+            <div class="user-bio">
+              <label>Bio</label>
+              <p id="bio">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text when an unknown printer took a galley of
+                 type and scrambled it to make a type specimen book. It has survived not only five centuries, 
+                 but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+            </div>
+          </div>
+        </div>
+        <p id="fullname"></p>
+      </div>
+    </section>
     <script type="module" src="main.js"></script>
   </body>
 </html>
